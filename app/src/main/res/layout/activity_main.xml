@@ -15,10 +15,12 @@
         </data>
 
         <fragment
-            android:id="@+id/titleFragment"
-            android:name="com.example.macaldo_exer5_lightsoutv2.TitleFragment"
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:navGraph="@navigation/navigation"
+            app:defaultNavHost="true"
             />
 
     </LinearLayout>
