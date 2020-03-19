@@ -19,6 +19,32 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@={values.title}"/>
+            android:text="@={values.title}"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/nameHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@={values.nameHint}"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={values.play}"
+            android:textColor="@android:color/holo_green_light" />
     </LinearLayout>
 </layout>
