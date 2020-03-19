@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.macaldo_exer5_lightsoutv2.databinding.FragmentTitleBinding
 
 
@@ -25,6 +26,10 @@ class TitleFragment : Fragment() {
         )
         binding.values = values
 
+        binding.playButton.setOnClickListener{ view : View ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+            binding.values?.name = binding.nameText.text.toString()
+        }
 
         return binding.root
     }
