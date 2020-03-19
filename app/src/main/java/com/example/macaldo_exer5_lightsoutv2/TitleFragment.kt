@@ -29,6 +29,7 @@ class TitleFragment : Fragment() {
         binding.playButton.setOnClickListener{ view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
             binding.values?.name = binding.nameText.text.toString()
+            binding.invalidateAll()
         }
 
         return binding.root
