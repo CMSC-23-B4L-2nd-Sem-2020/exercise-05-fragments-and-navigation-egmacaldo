@@ -8,12 +8,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <data>
-            <variable
-                name="values"
-                type="com.example.macaldo_exer5_lightsoutv2.Values" />
-        </data>
-
         <fragment
             android:id="@+id/myNavHostFragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
