@@ -6,11 +6,11 @@ import androidx.databinding.DataBindingUtil
 import com.example.macaldo_exer5_lightsoutv2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
     }
 }
